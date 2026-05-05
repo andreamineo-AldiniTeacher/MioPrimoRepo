@@ -7,7 +7,7 @@ app.secret_key = 'chiave segreta'
 
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=25)
 
-def get_db_connection():
+def get_db_connection(messaggio):
 
     conn = sqlite3.connect('biblioteca.db')
 
